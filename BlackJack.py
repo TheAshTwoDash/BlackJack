@@ -7,12 +7,11 @@ player_card_numbers = []
 player_card_faces = []
 all_numbers = []
 all_faces = []
-#global dealer_card_numbers,dealer_card_faces,all_numbers,all_faces,player_card_numbers,player_card_faces,running
 
 def create_card(character):
     time.sleep(0.3)
     card_number = random.randrange(1,14)
-    card_face = random.choice(["Diamond","Clover","Heart","Spade"])
+    card_face = random.choice(["♦️","♣️","♥️","♠️"])
     message = f"{card_number} {card_face}"
     
     if card_number > 10:
